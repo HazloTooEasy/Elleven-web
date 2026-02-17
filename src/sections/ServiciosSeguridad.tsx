@@ -146,7 +146,7 @@ export default function ServiciosSeguridad() {
           {/* Background Image */}
           <div className="absolute inset-0">
             <img
-              src={service.image}
+              src={service.image.startsWith('http') ? service.image : `${import.meta.env.BASE_URL}${service.image.replace(/^\//, '')}`}
               alt={service.title}
               className="w-full h-full object-cover"
             />
