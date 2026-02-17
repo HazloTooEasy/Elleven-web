@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 "use client"
 
 import * as React from "react"
@@ -700,7 +701,7 @@ function SidebarMenuSubButton({
   )
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
+// Helper to toggle the sidebar.
 export {
   Sidebar,
   SidebarContent,
